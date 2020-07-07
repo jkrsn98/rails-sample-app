@@ -1,3 +1,5 @@
 class ApplicationController < ActionController::Base
-    render test: "hello world"
+    def hello
+        render plain: "hello world!"
+    end
 end
